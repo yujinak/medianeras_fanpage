@@ -1,0 +1,44 @@
+.about {
+  display: flex;
+  margin: 20px auto;
+  padding: 60px;
+
+  iframe {
+    width: 120vw;
+  }
+
+  &__sinopse {
+    padding-left: 32px;
+    h2 {
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+    margin: 0 auto;
+    padding: 24px;
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      align-items: center;
+      width: 60vw;
+      height: 220px;
+      border: none;
+    }
+
+    &__sinopse {
+      padding: 6px;
+
+      h2 {
+        text-align: start;
+      }
+    }
+  }
+}

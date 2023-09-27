@@ -1,0 +1,57 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__corazon {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    height: 85vh;
+
+    transition: background-color 7s ease-in;
+
+    // background-image: url(/imagens/cena.PNG);
+    // background-size: contain;
+
+    &--is-active {
+      background-color: rgb(16, 88, 146);
+
+      .mariana {
+        position: relative;
+        z-index: 3;
+        transform: translateX(60vw);
+      }
+      .martin {
+        position: relative;
+        z-index: 2;
+        transform: translateX(-56vw);
+      }
+
+      .corazon-img {
+        opacity: 1;
+        z-index: 4;
+      }
+    }
+
+    .mariana {
+      aspect-ratio: 0.75;
+      height: 60vh;
+      transition: transform 8s;
+      z-index: 3;
+    }
+    .martin {
+      aspect-ratio: 0.85;
+      height: 60vh;
+      transition: transform 8s;
+      z-index: 2;
+    }
+
+    .corazon-img {
+      padding-top: 15px;
+      height: 115px;
+      position: relative;
+      z-index: 4;
+    }
+  }
+}

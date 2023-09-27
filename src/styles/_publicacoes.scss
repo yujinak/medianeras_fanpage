@@ -1,0 +1,28 @@
+.publicacoes {
+  padding: 80px;
+  background-color: rgb(16, 88, 146);
+
+  h2 {
+    color: #fff;
+  }
+  &__artigo {
+    padding: 16px 32px 16px;
+    font-size: 20px;
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: black;
+      transition: 1s;
+
+      &:hover {
+        border-bottom: 2px solid #fff;
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 24px;
+  }
+}

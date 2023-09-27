@@ -1,0 +1,16 @@
+.header {
+  position: sticky;
+  border-bottom: 2px solid black;
+  margin: 0;
+  height: 15vh;
+
+  img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    padding-right: 40px;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
